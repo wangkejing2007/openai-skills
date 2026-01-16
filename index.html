@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>目錄索引</title>
+    <title>下載 OpenAI Skill</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
@@ -17,58 +17,26 @@
     <!-- 主要容器卡片 -->
     <main class="bg-white w-full max-w-md p-6 rounded-2xl shadow-xl border border-slate-200">
         
-        <header class="mb-2 text-center">
-            <h1 class="text-4xl font-bold text-slate-800 tracking-wide">OpenAI Skill 目錄</h1>
-            <p class="text-slate-500 text-sm mt-1">請選擇要開啟的資料夾</p>
+        <header class="mb-6 text-center">
+            <h1 class="text-4xl font-bold text-slate-800 tracking-wide">下載 OpenAI Skill</h1>
+            <p class="text-slate-500 text-sm mt-2">點擊下方按鈕進行下載</p>
         </header>
 
         <nav class="flex flex-col gap-2">
             
-            <!-- Docs 目錄連結 -->
-            <!-- 修正：移除 ./ 前綴，改用純相對路徑，相容性更高 -->
-            <a href="docs/" target="_blank" title="請確保 index.html 旁有 docs 資料夾" class="group flex items-center justify-center gap-2 p-2 rounded-xl bg-blue-50 text-blue-700 hover:bg-blue-100 hover:shadow-md transition-all duration-200 border border-blue-100">
+            <!-- 下載按鈕 (單一連結) -->
+            <a href="skills.zip" download class="group flex items-center justify-center gap-2 p-4 rounded-xl bg-slate-800 text-white hover:bg-slate-700 hover:shadow-lg transition-all duration-200 border border-slate-700">
                 <div class="flex items-center gap-2">
-                    <!-- Icon: File Text / Folder -->
-                    <div class="p-2 bg-white rounded-lg shadow-sm group-hover:scale-110 transition-transform">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-600"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/><line x1="10" x2="8" y1="9" y2="9"/></svg>
-                    </div>
-                    <span class="text-lg font-bold tracking-wide">docs</span>
+                    <!-- Icon: Download -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover:scale-110 transition-transform"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                    <span class="text-lg font-bold tracking-wide">Download</span>
                 </div>
-                <!-- Arrow Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-400 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-200 w-0 group-hover:w-5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
-            </a>
-
-            <!-- PDFs 目錄連結 -->
-            <a href="pdfs/" target="_blank" title="請確保 index.html 旁有 pdfs 資料夾" class="group flex items-center justify-center gap-2 p-2 rounded-xl bg-red-50 text-red-700 hover:bg-red-100 hover:shadow-md transition-all duration-200 border border-red-100">
-                <div class="flex items-center gap-2">
-                    <!-- Icon: PDF / File -->
-                    <div class="p-2 bg-white rounded-lg shadow-sm group-hover:scale-110 transition-transform">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-red-600"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><path d="M9 15h6"/></svg>
-                    </div>
-                    <span class="text-lg font-bold tracking-wide">pdfs</span>
-                </div>
-                <!-- Arrow Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-red-400 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-200 w-0 group-hover:w-5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
-            </a>
-
-            <!-- Spreadsheets 目錄連結 -->
-            <a href="spreadsheets/" target="_blank" title="請確保 index.html 旁有 spreadsheets 資料夾" class="group flex items-center justify-center gap-2 p-2 rounded-xl bg-green-50 text-green-700 hover:bg-green-100 hover:shadow-md transition-all duration-200 border border-green-100">
-                <div class="flex items-center gap-2">
-                    <!-- Icon: Sheet / Table -->
-                    <div class="p-2 bg-white rounded-lg shadow-sm group-hover:scale-110 transition-transform">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-600"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><line x1="3" x2="21" y1="9" y2="9"/><line x1="3" x2="21" y1="15" y2="15"/><line x1="9" x2="9" y1="9" y2="21"/><line x1="15" x2="15" y1="9" y2="21"/></svg>
-                    </div>
-                    <span class="text-lg font-bold tracking-wide">spreadsheets</span>
-                </div>
-                <!-- Arrow Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-400 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-200 w-0 group-hover:w-5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
             </a>
 
         </nav>
         
-        <footer class="mt-2 text-center text-xs text-slate-400">
-            &copy; 檔案系統索引 <br>
-            <span class="text-[10px] text-slate-300">請確認 docs, pdfs, spreadsheets 資料夾已建立</span>
+        <footer class="mt-6 text-center text-xs text-slate-400">
+            &copy; OpenAI Skill
         </footer>
     </main>
 
